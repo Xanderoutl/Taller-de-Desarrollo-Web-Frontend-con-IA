@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Infusión – Código Descafeinado. Cafetería tecnológica dentro de tu oficina. Café de especialidad, snacks y espacios de productividad para estudiantes y profesionales." />
+  <meta name="theme-color" content="#4E342E" />
+  <title>Infusión – Código Descafeinado | Cafetería Tecnológica</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ──────────────────────────────────────────────── -->
+  <header id="navbar" class="navbar" role="banner">
+    <div class="container navbar__inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="navbar__logo" aria-label="Infusión – Código Descafeinado, ir al inicio">
+        <div class="navbar__logo-icon" aria-hidden="true">☕</div>
+        <div class="navbar__logo-text">
+          <span>Infusión</span>
+          <span>// Código Descafeinado</span>
+        </div>
+      </a>
+
+      <!-- Desktop links -->
+      <nav class="navbar__links" aria-label="Navegación principal">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#catalogo">Menú</a>
+        <a href="#servicio">Servicio</a>
+        <a href="#testimonios">Reviews</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <a href="#contacto" class="navbar__cta btn btn--primary" style="padding:.6rem 1.25rem;font-size:.85rem">
+        Reservar Pod ↗
+      </a>
+
+      <!-- Hamburger -->
+      <button
+        id="hamburger"
+        class="navbar__hamburger"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <nav id="nav-drawer" class="navbar__drawer" aria-label="Menú móvil" aria-hidden="true">
+    <a href="#nosotros"><span class="nav-icon">🧭</span> Nosotros</a>
+    <a href="#catalogo"><span class="nav-icon">☕</span> Menú</a>
+    <a href="#servicio"><span class="nav-icon">💡</span> Servicio FlowState</a>
+    <a href="#testimonios"><span class="nav-icon">💬</span> Reviews</a>
+    <a href="#contacto"><span class="nav-icon">📍</span> Contacto</a>
+    <div class="navbar__drawer-cta">
+      <a href="#contacto" class="btn btn--primary">Reservar un Focus Pod →</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ── Hero ──────────────────────────────────────────────── -->
+    <section id="hero" aria-labelledby="hero-title">
+      <!-- Decorative code rain -->
+      <div class="hero__bg-code" aria-hidden="true"></div>
+      <!-- Decorative blobs -->
+      <div class="hero__decor hero__decor--1" aria-hidden="true"></div>
+      <div class="hero__decor hero__decor--2" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <!-- Content -->
+        <div class="hero__content">
+          <div class="hero__eyebrow" aria-hidden="true">
+            <span class="hero__eyebrow-line"></span>
+            <span>Est. 2024 · Piso 3, Torre Norte</span>
+          </div>
+
+          <h1 id="hero-title" class="hero__title">
+            Donde las mejores ideas<br>
+            se <em>programan</em><br>
+            con café
+          </h1>
+
+          <p class="hero__tagline">
+            Cafetería tecnológica dentro de tu oficina. Café de especialidad, snacks de alto rendimiento y espacios diseñados para el flujo profundo.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#catalogo" class="btn btn--primary">Descubre nuestra experiencia →</a>
+            <a href="#servicio" class="btn btn--outline">Ver FlowState</a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero__stats" role="list" aria-label="Estadísticas de la cafetería">
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-num">12+</span>
+              <span class="hero__stat-label">Orígenes café</span>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-num">8</span>
+              <span class="hero__stat-label">Focus Pods</span>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-num">1 Gbps</span>
+              <span class="hero__stat-label">Wifi velocidad</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual card (laptop + coffee) -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card">
+            <div class="hero__card-top">
+              <div class="hero__card-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="hero__card-file">infusion.config.js</span>
+            </div>
+
+            <div class="hero__coffee-wrap">
+              <span class="hero__coffee-emoji">☕</span>
+              <span class="hero__coffee-label">brewing...</span>
+            </div>
+
+            <div class="hero__code">
+              <span class="c-dim">// infusion.config.js</span><br>
+              <span class="c-verde">const</span>
+              <span class="c-beige"> config</span>
+              <span class="c-dim"> = {</span><br>
+              &nbsp;&nbsp;<span class="c-cafe">cafe</span>
+              <span class="c-dim">: </span>
+              <span class="c-verde">'specialty'</span><span class="c-dim">,</span><br>
+              &nbsp;&nbsp;<span class="c-cafe">wifi</span>
+              <span class="c-dim">: </span>
+              <span class="c-verde">'1 Gbps'</span><span class="c-dim">,</span><br>
+              &nbsp;&nbsp;<span class="c-cafe">pods</span>
+              <span class="c-dim">: </span>
+              <span class="c-beige">8</span><span class="c-dim">,</span><br>
+              &nbsp;&nbsp;<span class="c-cafe">mood</span>
+              <span class="c-dim">: </span>
+              <span class="c-verde">'deep focus'</span><br>
+              <span class="c-dim">}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features bar ───────────────────────────────────────── -->
+    <section id="features" aria-label="Propuestas de valor">
+      <div class="container">
+        <div class="features__grid" role="list">
+
+          <div class="feature-item reveal" role="listitem">
+            <div class="feature-item__icon" aria-hidden="true">☕</div>
+            <div class="feature-item__text">
+              <strong>Café de especialidad</strong>
+              <span>12+ orígenes single origin tostados en ciclos semanales</span>
+            </div>
+          </div>
+
+          <div class="feature-item reveal" role="listitem" style="transition-delay:.1s">
+            <div class="feature-item__icon" aria-hidden="true">💻</div>
+            <div class="feature-item__text">
+              <strong>Focus Pods</strong>
+              <span>8 cabinas privadas con monitor 4K y carga inalámbrica</span>
+            </div>
+          </div>
+
+          <div class="feature-item reveal" role="listitem" style="transition-delay:.2s">
+            <div class="feature-item__icon" aria-hidden="true">⚡</div>
+            <div class="feature-item__text">
+              <strong>Wifi 1 Gbps</strong>
+              <span>Fibra simétrica dedicada. Zero lag, zero excusas</span>
+            </div>
+          </div>
+
+          <div class="feature-item reveal" role="listitem" style="transition-delay:.3s">
+            <div class="feature-item__icon" aria-hidden="true">🎯</div>
+            <div class="feature-item__text">
+              <strong>FlowState</strong>
+              <span>Servicio de productividad con datos reales de tu rendimiento</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Institucional ──────────────────────────────────────── -->
+    <section id="nosotros" aria-labelledby="nosotros-title">
+      <div class="container">
+        <div class="nosotros__grid">
+
+          <!-- Historia -->
+          <div class="nosotros__story reveal">
+            <p class="nosotros__story-eyebrow">// nuestra historia</p>
+            <h2 id="nosotros-title">
+              Nació de un commit de frustración
+            </h2>
+            <p>
+              Era 2023 y dos programadores compartían el mismo problema: las máquinas de café de la oficina eran un insulto al paladar y el espacio de trabajo no invitaba a la concentración. Así que hicieron un fork del problema y crearon su propia solución.
+            </p>
+            <p>
+              Infusión – Código Descafeinado abrió sus puertas en el Piso 3 de la Torre Norte como el primer experimento de cafetería tecnológica integrada. No como un espacio decorativo, sino como una herramienta funcional para quienes trabajan y estudian con la cabeza.
+            </p>
+            <p>
+              Hoy, cientos de developers, diseñadores, estudiantes y emprendedores pasan por aquí cada semana. No solo a tomar café: a producir, conectar y encontrar su estado de flujo.
+            </p>
+          </div>
+
+          <!-- Misión, Visión, Valores -->
+          <div class="nosotros__mvv">
+
+            <div class="mvv-card mvv-card--mision reveal" style="transition-delay:.15s">
+              <div class="mvv-card__icon" aria-hidden="true">🎯</div>
+              <h3>Misión</h3>
+              <p>
+                Impulsar la productividad y el bienestar de estudiantes y profesionales mediante café de especialidad, snacks de calidad y espacios tecnológicos que potencian el trabajo profundo.
+              </p>
+            </div>
+
+            <div class="mvv-card mvv-card--vision reveal" style="transition-delay:.25s">
+              <div class="mvv-card__icon" aria-hidden="true">🔭</div>
+              <h3>Visión</h3>
+              <p>
+                Ser la red de cafeterías tech de referencia en Colombia, presentes en las principales torres de oficinas y campus universitarios para 2027.
+              </p>
+            </div>
+
+            <div class="mvv-card mvv-card--valores reveal" style="transition-delay:.35s" style="grid-column: 1 / -1">
+              <div class="mvv-card__icon" aria-hidden="true">⚡</div>
+              <h3>Valores</h3>
+              <p>Todo lo que hacemos pasa por estos principios:</p>
+              <div class="valores-list" role="list" aria-label="Valores de la empresa">
+                <span class="valor-tag" role="listitem">Calidad sin excusas</span>
+                <span class="valor-tag" role="listitem">Tecnología útil</span>
+                <span class="valor-tag" role="listitem">Comunidad primero</span>
+                <span class="valor-tag" role="listitem">Sostenibilidad</span>
+                <span class="valor-tag" role="listitem">Innovación continua</span>
+                <span class="valor-tag" role="listitem">Buen café</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Catálogo ───────────────────────────────────────────── -->
+    <section id="catalogo" aria-labelledby="catalogo-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="badge">// menu.json</span>
+          <h2 id="catalogo-title">Nuestro menú</h2>
+          <p>Productos de especialidad con nombres que entienden tu día a día. Sin jarabe de alta fructosa, sin compromisos.</p>
+        </header>
+
+        <!-- Filtros -->
+        <div class="catalogo__filters" role="group" aria-label="Filtrar productos por categoría">
+          <button class="filter-btn active" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-btn" data-filter="cafe" aria-pressed="false">Cafés</button>
+          <button class="filter-btn" data-filter="snack" aria-pressed="false">Snacks</button>
+          <button class="filter-btn" data-filter="almuerzo" aria-pressed="false">Almuerzo</button>
+        </div>
+
+        <!-- Grid inyectado por JS -->
+        <div id="catalogo-grid" class="catalogo__grid" role="list" aria-label="Productos disponibles">
+          <!-- Render vía script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Servicio Innovador: FlowState ─────────────────────── -->
+    <section id="servicio" aria-labelledby="servicio-title">
+      <div class="container servicio__content">
+
+        <header class="servicio__header reveal">
+          <span class="badge">// servicio_innovador.ts</span>
+          <h2 id="servicio-title">
+            Tu primer servicio de<br>
+            <em>productividad medible</em>
+          </h2>
+          <p>FlowState transforma tu tiempo en la cafetería en datos accionables. No es una app de productividad genérica: es un ecosistema diseñado específicamente para el espacio Infusión.</p>
+        </header>
+
+        <!-- Left col -->
+        <div class="servicio__left">
+          <div class="servicio__name" aria-label="Nombre del servicio: FlowState by Infusión">
+            FlowState<span style="color:rgba(245,230,202,.3)"> by Infusión</span>
+          </div>
+
+          <div class="servicio__steps" aria-label="Cómo funciona FlowState">
+            <div class="step reveal">
+              <div class="step__num" aria-hidden="true">01</div>
+              <div class="step__text">
+                <strong>Escanea el QR de tu mesa</strong>
+                <p>Al llegar, escaneas el código QR de tu mesa o pod. El sistema registra tu sesión de trabajo sin necesidad de apps adicionales.</p>
+              </div>
+            </div>
+            <div class="step reveal" style="transition-delay:.1s">
+              <div class="step__num" aria-hidden="true">02</div>
+              <div class="step__text">
+                <strong>Define tu intención de sesión</strong>
+                <p>Seleccionas el tipo de trabajo: "Código profundo", "Diseño", "Estudio", "Reuniones" o "Escritura". El ambiente sonoro y la luz se adaptan.</p>
+              </div>
+            </div>
+            <div class="step reveal" style="transition-delay:.2s">
+              <div class="step__num" aria-hidden="true">03</div>
+              <div class="step__text">
+                <strong>Trabaja con tu café</strong>
+                <p>El sistema sugiere tu bebida óptima según la duración y tipo de sesión. Tus pedidos llegan directo a tu mesa sin interrupciones.</p>
+              </div>
+            </div>
+            <div class="step reveal" style="transition-delay:.3s">
+              <div class="step__num" aria-hidden="true">04</div>
+              <div class="step__text">
+                <strong>Recibe tu reporte semanal</strong>
+                <p>Cada semana recibes un resumen de tus horas de flujo, bebidas consumidas, productividad estimada y tu "curva de cafeína" personal.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Audience -->
+          <div class="servicio__target reveal">
+            <div class="servicio__target-icon" aria-hidden="true">👥</div>
+            <div class="servicio__target-text">
+              <strong>Público objetivo</strong>
+              <span>Developers, diseñadores UX, estudiantes de posgrado, emprendedores y cualquier profesional que valore el trabajo en estado de flujo.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right col -->
+        <div class="servicio__right">
+          <!-- Benefits -->
+          <div class="servicio__benefits" role="list" aria-label="Beneficios de FlowState">
+
+            <div class="benefit-card reveal" role="listitem">
+              <div class="benefit-card__icon" aria-hidden="true">📊</div>
+              <h4>Datos reales</h4>
+              <p>Dashboard personal con horas de flujo, picos de productividad y tendencias semanales.</p>
+            </div>
+
+            <div class="benefit-card reveal" role="listitem" style="transition-delay:.1s">
+              <div class="benefit-card__icon" aria-hidden="true">🎵</div>
+              <h4>Ambiente adaptativo</h4>
+              <p>Música y luz ambiental que se ajustan al tipo de trabajo que declaraste al iniciar.</p>
+            </div>
+
+            <div class="benefit-card reveal" role="listitem" style="transition-delay:.15s">
+              <div class="benefit-card__icon" aria-hidden="true">☕</div>
+              <h4>Café inteligente</h4>
+              <p>Sugerencias de bebida según hora, tipo de sesión y tu historial de rendimiento personal.</p>
+            </div>
+
+            <div class="benefit-card reveal" role="listitem" style="transition-delay:.2s">
+              <div class="benefit-card__icon" aria-hidden="true">🔒</div>
+              <h4>Privado y sin rastreo</h4>
+              <p>Todos los datos son tuyos. No compartimos con terceros. Zero tracking externo.</p>
+            </div>
+
+          </div>
+
+          <!-- Live monitor widget -->
+          <div class="servicio__monitor reveal" style="transition-delay:.25s" aria-label="Panel de estado de FlowState en tiempo real">
+            <div class="monitor__header">
+              <div class="monitor__dot" aria-hidden="true"></div>
+              <span class="monitor__title">FlowState · Live Dashboard</span>
+            </div>
+            <div class="monitor__stat-row" role="list" aria-label="Estadísticas en vivo">
+              <div class="monitor__stat" role="listitem">
+                <span class="monitor__stat-val">23</span>
+                <span class="monitor__stat-label">Sesiones hoy</span>
+              </div>
+              <div class="monitor__stat" role="listitem">
+                <span class="monitor__stat-val">4.2h</span>
+                <span class="monitor__stat-label">Flujo promedio</span>
+              </div>
+              <div class="monitor__stat" role="listitem">
+                <span class="monitor__stat-val">87%</span>
+                <span class="monitor__stat-label">Satisfacción</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Testimonios ────────────────────────────────────────── -->
+    <section id="testimonios" aria-labelledby="testimonios-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="badge badge--cafe">// reviews[]</span>
+          <h2 id="testimonios-title">Lo que dice la comunidad</h2>
+          <p>Historias reales de personas que encontraron su estado de flujo en Infusión.</p>
+        </header>
+        <div id="testimonios-grid" class="testimonios__grid" role="list" aria-label="Testimonios de clientes">
+          <!-- Render vía script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contacto ───────────────────────────────────────────── -->
+    <section id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="contacto__grid">
+
+          <!-- Info -->
+          <div class="contacto__info reveal">
+            <div class="contacto__info-header">
+              <span class="badge" style="margin-bottom:.875rem">// location.json</span>
+              <h2 id="contacto-title">Encuéntranos</h2>
+              <p>Estamos dentro de la Torre Norte. Busca el ☕ en el tercer piso y el aroma de café recién tostado te guiará.</p>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail__icon" aria-hidden="true">📍</div>
+              <div>
+                <strong>Dirección</strong>
+                <span>Cra 7 #72-64, Piso 3, Torre Norte · Bogotá D.C.</span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail__icon" aria-hidden="true">⏰</div>
+              <div>
+                <strong>Horario</strong>
+                <span>Lunes a Sábado: 6:00 am – 8:00 pm</span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail__icon" aria-hidden="true">📱</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+57 310 555 0101</span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail__icon" aria-hidden="true">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <span>hola@infusioncafe.co</span>
+              </div>
+            </div>
+
+            <!-- Social links -->
+            <div class="contacto__social" role="list" aria-label="Redes sociales">
+              <a href="#" class="social-link" role="listitem" aria-label="Instagram de Infusión">
+                📸 Instagram
+              </a>
+              <a href="#" class="social-link" role="listitem" aria-label="WhatsApp de Infusión">
+                💬 WhatsApp
+              </a>
+              <a href="#" class="social-link" role="listitem" aria-label="LinkedIn de Infusión">
+                💼 LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="contacto__form-wrap reveal" style="transition-delay:.15s">
+            <h3>Escríbenos</h3>
+
+            <form id="contact-form" novalidate aria-label="Formulario de contacto">
+
+              <div class="form-group">
+                <label for="nombre">
+                  Nombre completo <span class="required" aria-label="campo obligatorio">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                  autocomplete="name"
+                  aria-describedby="error-nombre"
+                />
+                <span id="error-nombre" class="form-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">
+                  Correo electrónico <span class="required" aria-label="campo obligatorio">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="tu@correo.com"
+                  required
+                  autocomplete="email"
+                  aria-describedby="error-email"
+                />
+                <span id="error-email" class="form-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto">
+                  <option value="">Selecciona un asunto</option>
+                  <option value="reserva">Reservar un Focus Pod</option>
+                  <option value="flowstate">Info sobre FlowState</option>
+                  <option value="empresa">Convenio empresarial</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">
+                  Mensaje <span class="required" aria-label="campo obligatorio">*</span>
+                </label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  placeholder="¿En qué podemos ayudarte?"
+                  required
+                  aria-describedby="error-mensaje"
+                ></textarea>
+                <span id="error-mensaje" class="form-error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn--cafe form-submit">
+                Enviar mensaje ↗
+              </button>
+            </form>
+
+            <!-- Success state -->
+            <div id="form-success" class="form-success" role="status" aria-live="polite">
+              <div class="form-success__icon" aria-hidden="true">✅</div>
+              <h4>¡Mensaje recibido!</h4>
+              <p>Te respondemos en menos de 24 horas. Mientras tanto, ven a tomar un café con nosotros.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="navbar__logo">
+            <div class="navbar__logo-icon" aria-hidden="true">☕</div>
+            <div class="navbar__logo-text">
+              <span>Infusión</span>
+              <span>// Código Descafeinado</span>
+            </div>
+          </div>
+          <p>
+            Cafetería tecnológica dentro de tu oficina. Café de especialidad, snacks y espacios para el trabajo profundo.
+          </p>
+        </div>
+
+        <!-- Links Navegación -->
+        <div class="footer__col">
+          <h4>Sitio</h4>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#catalogo">Menú</a></li>
+            <li><a href="#servicio">FlowState</a></li>
+            <li><a href="#testimonios">Reviews</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Productos -->
+        <div class="footer__col">
+          <h4>Destacados</h4>
+          <ul>
+            <li><a href="#catalogo">Espresso Debug</a></li>
+            <li><a href="#catalogo">Cappuccino Full Stack</a></li>
+            <li><a href="#catalogo">Brownie 404</a></li>
+            <li><a href="#catalogo">Dev Kit</a></li>
+            <li><a href="#servicio">Focus Pods</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto rápido -->
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:+573105550101">+57 310 555 0101</a></li>
+            <li><a href="mailto:hola@infusioncafe.co">hola@infusioncafe.co</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer__bottom">
+        <p>© 2024 Infusión – Código Descafeinado · Bogotá, Colombia</p>
+        <span class="footer__bottom-code" aria-hidden="true">
+          console.log('made with ☕ + 💻');
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Back to top ─────────────────────────────────────────── -->
+  <button id="back-top" aria-label="Volver al inicio de la página" title="Ir arriba">
+    ↑
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
