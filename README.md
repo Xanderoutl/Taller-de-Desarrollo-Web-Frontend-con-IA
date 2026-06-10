@@ -318,4 +318,7 @@ URL del despliegue:
 # Integrantes
 
 * yhony alexander 
-hilo de conversacion (https://claude.ai/share/a12c7367-85ed-4a51-8e22-89fc8117f840) uso de promts creados 
+hilo de conversacion (https://claude.ai/share/a12c7367-85ed-4a51-8e22-89fc8117f840) uso de promts creados
+
+GIT PAGES
+URL:https://xanderoutl.github.io/Taller-de-Desarrollo-Web-Frontend-con-IA/infusion/
